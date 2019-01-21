@@ -11,5 +11,5 @@ $pdo = new PDO("pgsql:" . sprintf(
 
 $query = "SELECT * FROM t_users";
 $result = $pdo->query($query);
-
-var_dump($result);
+$md5 = md5("password");
+var_dump($md5);
