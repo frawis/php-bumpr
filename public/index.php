@@ -10,6 +10,6 @@ $pdo = new PDO("pgsql:" . sprintf(
 ));
 
 $query = "SELECT * FROM t_users";
-$result = $pdo->execute($query);
+$result = $pdo->query($query);
 
 var_dump($result);
