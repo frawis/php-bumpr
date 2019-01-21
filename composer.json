@@ -1,0 +1,15 @@
+{
+    "name": "frasty/php-bumpr",
+    "description": "PHP Projekt",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Frank",
+            "email": "frank.wissink@gmail.com"
+        }
+    ],
+		"require": {},
+		"require-dev": {
+			"heroku/heroku-buildpack-php": "*"
+		}
+}
