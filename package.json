@@ -1,0 +1,18 @@
+{
+  "name": "php-bumpr",
+  "version": "1.0.0",
+  "description": "IntA Projekt",
+  "main": "sass/mystyles.scss",
+  "author": "Frank <frank.wissink@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "bulma": "^0.7.2",
+    "node-sass": "^4.11.0"
+	},
+	"scripts": {
+		"css-build": "node-sass --omit-source-map-url sass/style.scss public/assets/css/style.css",
+		"css-watch": "yarn run css-build -- --watch",
+		"start": "yarn run css-watch"
+	}
+}

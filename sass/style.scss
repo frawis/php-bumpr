@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+// Import external font
+@import url('https://fonts.googleapis.com/css?family=Eczar|Roboto');
+
+
+$family-sans-serif: 'Roboto', sans-serif;
+$family-secondary: 'Eczar', serif;
+
+
+@import "../node_modules/bulma/bulma.sass";
