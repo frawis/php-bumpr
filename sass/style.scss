@@ -5,7 +5,13 @@
 
 
 $family-sans-serif: 'Roboto', sans-serif;
-$family-secondary: 'Eczar', serif;
+$family-serif: 'Eczar', serif;
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $family-secondary;
+}
 
 
 @import "../node_modules/bulma/bulma.sass";
