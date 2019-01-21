@@ -10,6 +10,6 @@ $pdo = new PDO("pgsql:" . sprintf(
 ));
 
 $query = "SELECT * FROM t_users";
-$result = $pdo->query($query);
-$md5 = md5("password");
-var_dump($md5);
+foreach ($pdo->query($query) as $row) {
+	echo $row['vorname'];
+}
