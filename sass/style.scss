@@ -13,5 +13,8 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $family-secondary;
 }
 
+body {
+	color: #212121;
+}
 
 @import "../node_modules/bulma/bulma.sass";
