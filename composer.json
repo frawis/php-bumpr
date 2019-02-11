@@ -8,7 +8,9 @@
             "email": "frank.wissink@gmail.com"
         }
     ],
-		"require": {},
+		"require": {
+        "twig/twig": "^2.6"
+    },
 		"require-dev": {
 			"heroku/heroku-buildpack-php": "*"
 		}
