@@ -14,5 +14,6 @@
 		<![endif]-->
 		<h1 class="title">Bumpr</h1>
 		<p class="subtitle">Testanwendung</p>
+        <?php include_once 'filme.php' ?>
 	</body>
 </html>
