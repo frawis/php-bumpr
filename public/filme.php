@@ -16,7 +16,11 @@ if ( $count > 0 ) {
         extract($row);
         ?>
         <tr>
-            <td><?php echo $name; ?></td>
+            <td><?php echo $titel; ?></td>
+            <td><?php echo $jahr; ?></td>
+            <td><?php echo $laenge; ?></td>
+            <td><?php echo $genre; ?></td>
+            <td><?php echo $gesehen; ?></td>
         </tr>
         <?php
     }
