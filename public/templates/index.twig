@@ -1,0 +1,10 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+    <ul>
+        {% for film in films %}
+            <li>{{ film.name }} - {{ film.genre }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

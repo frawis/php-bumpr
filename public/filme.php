@@ -12,7 +12,14 @@ $filme = $film->lesen();
 $count = $filme->rowCount();
 
 if ( $count > 0 ) {
-
+    while ($row = $filme->fetch(PDO::FETCH_ASSOC)){
+        extract($row);
+        ?>
+        <tr>
+            <td><?php echo $name; ?></td>
+        </tr>
+        <?php
+    }
 } else {
 	?>
     <div class="notification is-danger">

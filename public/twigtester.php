@@ -9,4 +9,6 @@ $films = [
     ],
     ];
 
-		echo $twig->render('index.html', ['films' => $films]);
+//$tpl = $twig->loadTemplate('index.twig');
+//echo $tpl->render(['films' => $films]);
+echo $twig->render('index.twig', ['films' => $films]);
