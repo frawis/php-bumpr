@@ -6,7 +6,16 @@
     <title>Bumpr</title>
     <meta name="description" content="PHP Testanwendung">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+		<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#603cba">
+		<meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
 </head>
 <body class="has-navbar-fixed-top">
 <nav class="navbar is-fixed-top is-black">
