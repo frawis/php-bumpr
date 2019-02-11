@@ -12,6 +12,19 @@ $filme = $film->lesen();
 $count = $filme->rowCount();
 
 if ( $count > 0 ) {
+    ?>
+    <table class="table is-striped is-hoverable">
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Jahr</th>
+                <th>Länge</th>
+                <th>Genre</th>
+                <th>Gesehen</th>
+            </tr>
+        </thead>
+        <tbody>
+    <?php
     while ($row = $filme->fetch(PDO::FETCH_ASSOC)){
         extract($row);
         ?>
@@ -24,11 +37,15 @@ if ( $count > 0 ) {
         </tr>
         <?php
     }
+    ?>
+    </tbody>
+    </table>
+    <?php
 } else {
 	?>
     <div class="notification is-danger">
         <button class="delete"></button>
-        Leider wurden kein Film in der Datenbank gefunden.
+        Leider wurde kein Film in der Datenbank gefunden.
     </div>
 	<?php
 }
