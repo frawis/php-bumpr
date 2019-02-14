@@ -6,8 +6,10 @@ $seitentitel = "Start";
 
 include_once "parts/header.php";
 
+var_dump( $_SESSION['angemeldet'] );
+
 if ( $_SESSION['angemeldet'] ) {
-    include_once 'parts/intern.html';
+	include_once 'parts/intern.html';
 } else {
 	include_once 'parts/willkommen.html';
 }
