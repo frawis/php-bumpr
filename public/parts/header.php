@@ -1,6 +1,9 @@
 <?php
+session_name( "BumprFilmDB" );
+session_start();
+
 if ( ! isset( $_SESSION['angemeldet'] ) ) {
-	$_SESSION['angemeldet'] = true;
+	$_SESSION['angemeldet'] = false;
 }
 
 if ( ! isset( $_SESSION['benutzername'] ) ) {
@@ -41,7 +44,7 @@ if ( ! isset( $_SESSION['benutzername'] ) ) {
     </div>
     <div class="navbar-menu" id="bumprMenu">
         <div class="navbar-start">
-            <a href="#" class="navbar-item">Start</a>
+            <a href="/" class="navbar-item">Start</a>
         </div>
         <div class="navbar-end">
 			<?php if ( $_SESSION['angemeldet'] === true ) { ?>
