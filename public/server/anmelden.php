@@ -12,7 +12,7 @@ $connection = $db->getConnection();
 
 $stm = $connection->prepare( "SELECT * FROM t_users WHERE benutzername = ?" );
 $stm->execute( array( $benutzername ) );
-while ( $row = $statement->fetch() ) {
+while ( $row = $stm->fetch() ) {
 	if ( $benutzername === $row['benutzername'] ) {
 		if ( md5( $benutzerpasswort ) === $row['passwort'] ) {
 			$_SESSION['benutzername'] = $benutzername;
@@ -26,4 +26,4 @@ while ( $row = $statement->fetch() ) {
 }
 
 //
-//header( 'Location: /' );
+header( 'Location: ../' );
