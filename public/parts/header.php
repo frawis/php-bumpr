@@ -1,6 +1,6 @@
 <?php
 if ( ! isset( $_SESSION['angemeldet'] ) ) {
-	$_SESSION['angemeldet'] = false;
+	$_SESSION['angemeldet'] = true;
 }
 
 if ( ! isset( $_SESSION['benutzername'] ) ) {
