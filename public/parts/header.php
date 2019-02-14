@@ -31,7 +31,7 @@ if ( ! isset( $_SESSION['benutzername'] ) ) {
     <meta name="theme-color" content="#ffffff">
 </head>
 <body class="has-navbar-fixed-top">
-<nav class="navbar is-fixed-top is-black">
+<nav class="navbar is-fixed-top is-primary">
     <div class="navbar-brand">
         <a class="navbar-item" href="/">
             <img src="assets/img/favicon/favicon-32x32.png"> Bumpr FilmDB
