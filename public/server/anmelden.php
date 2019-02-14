@@ -6,6 +6,9 @@ $benutzername       = isset( $_POST['benutzername'] ) ? $_POST['benutzername'] :
 $benutzerpasswort   = isset( $_POST['benutzerpasswort'] ) ? $_POST['benutzerpasswort'] : "";
 $angemeldet_bleiben = isset( $_POST['angemeldet_bleiben'] );
 
+
+var_dump($benutzername, $angemeldet_bleiben);
+
 include_once '../inc/Database.php';
 $db         = new Database();
 $connection = $db->getConnection();
@@ -23,4 +26,4 @@ while ( $row = $stm->fetch() ) {
 }
 
 //
-header( 'Location: ../' );
+//header( 'Location: ../' );
