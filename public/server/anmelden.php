@@ -25,5 +25,5 @@ while ( $row = $statement->fetch() ) {
 	}
 }
 
-
-header( 'Location: /' );
+//
+//header( 'Location: /' );
