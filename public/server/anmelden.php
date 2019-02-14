@@ -17,9 +17,6 @@ while ( $row = $stm->fetch() ) {
 		if ( md5( $benutzerpasswort ) === $row['passwort'] ) {
 			$_SESSION['benutzername'] = $benutzername;
 			$_SESSION['angemeldet']   = true;
-			if ( $angemeldet_bleiben ) {
-				setcookie( 'BUMPRFILMDB', $benutzername, time() + ( 3600 * 24 * 365 ), "/", "secret-badlands-78677.herokuapp.com" ); // 1 Jahr gueltig
-			}
 		}
 		break;
 	}
