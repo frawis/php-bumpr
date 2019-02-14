@@ -1,0 +1,60 @@
+/* _variables.scss | Bumpr | v0.1 */
+
+/*-----------------------------------------------------
+ * Table of content
+ *-----------------------------------------------------*/
+/* 0 Colors
+ * 1 Typography
+ *-----------------------------------------------------*/
+
+
+/*-----------------------------------------------------
+ * 0 Colors
+ *-----------------------------------------------------*/
+$black:        hsl(0, 0%, 4%) !default;
+$black-bis:    hsl(0, 0%, 7%) !default;
+$black-ter:    hsl(0, 0%, 14%) !default;
+
+$grey-darker:  hsl(0, 0%, 21%) !default;
+$grey-dark:    hsl(0, 0%, 29%) !default;
+$grey:         hsl(0, 0%, 48%) !default;
+$grey-light:   hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+
+$white-ter:    hsl(0, 0%, 96%) !default;
+$white-bis:    hsl(0, 0%, 98%) !default;
+$white:        hsl(0, 0%, 100%) !default;
+
+$orange:       hsl(14,  100%, 53%) !default;
+$yellow:       hsl(48,  100%, 67%) !default;
+$green:        hsl(97, 61%, 54%) !default;
+$turquoise:    hsl(171, 100%, 41%) !default;
+$cyan:         hsl(204, 86%,  53%) !default;
+$blue:         hsl(217, 71%,  53%) !default;
+$purple:       hsl(271, 100%, 71%) !default;
+$red:          hsl(348, 100%, 61%) !default;
+
+/*-----------------------------------------------------
+ * 1 Typography
+ *-----------------------------------------------------*/
+$family-sans-serif: 'Roboto', sans-serif;
+$family-serif: 'Eczar', serif;
+$family-primary: $family-sans-serif;
+$family-secondary: $family-serif;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $family-secondary;
+}
+
+/*
+ * Derived Vars
+ */
+$primary: $purple !default;
+$secondary: $green !default;
+
+$accent: $grey-light;
+
+$purple-invert: findColorInvert($purple);
+$link: $purple !default;
+$link-hover: $purple-invert !default;
+

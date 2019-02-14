@@ -7,17 +7,16 @@
     <meta name="description" content="PHP Testanwendung">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body class="has-navbar-fixed-top">
 
-{% include 'tester.twig' %}
-<section class="section">
-    <div class="container">
-        {% block content %}
+{% include 'partials/navbar.twig' %}
 
-        {% endblock %}
-    </div>
-</section>
+{% block content %}
 
+{% endblock %}
+
+{% include 'partials/footer.twig' %}
 </body>
 </html>

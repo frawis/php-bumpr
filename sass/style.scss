@@ -2,19 +2,11 @@
 
 // Import external font
 @import url('https://fonts.googleapis.com/css?family=Eczar|Roboto');
-
-
-$family-sans-serif: 'Roboto', sans-serif;
-$family-serif: 'Eczar', serif;
-$family-primary: $family-sans-serif;
-$family-secondary: $family-serif;
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: $family-secondary;
-}
-
-body {
-	color: #212121;
-}
-
+@import "variables"; // Variablen
 @import "../node_modules/bulma/bulma.sass";
+@import "partials/login";
+@import "partials/layout-utils";
+
+.hero.is-fullheight-with-navbar {
+  min-height: calc(100vh - 220px);
+}

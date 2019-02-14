@@ -1,0 +1,28 @@
+/* partials/_login.scss | Bumpr | v0.1 */
+
+/*-----------------------------------------------------
+ * Table of content
+ *-----------------------------------------------------*/
+/* 0 Login Box
+ *-----------------------------------------------------*/
+
+/*-----------------------------------------------------*/
+/* 0 Login Box
+ *-----------------------------------------------------*/
+.login-box {
+  margin-top: 5rem;
+}
+
+.avatar {
+  margin-top: -80px;
+  padding-bottom: 20px;
+
+  .svg-inline--fa {
+    background: $white-ter;
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    padding: 20px;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+  }
+}
