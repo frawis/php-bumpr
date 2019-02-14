@@ -1,5 +1,5 @@
 <?php
-session_name( "Bumpr" );
+session_name( "BumprFilmDB" );
 session_start();
 //global $seitentitel;
 $seitentitel = "Registrierung";
